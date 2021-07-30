@@ -63,6 +63,7 @@ class Student
   string to_string()
     {
       string ans=std::to_string(age)+","+fname+","+lname+","+std::to_string(std);
+      return ans;
   }
 };
 int main() {
@@ -81,7 +82,7 @@ int main() {
     cout<< st.getlname()<<", "<<st.getfname()<<endl;
     cout<< st.getstd()<<endl;
     cout<<endl;
-     cout<< st.to_string(); 
+    cout<<st.to_string(); 
     /*cout<<age<<","<<fname<<","<<lname<<","<<std;*/
     return 0;
 }
